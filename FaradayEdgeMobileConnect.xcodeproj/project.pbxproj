@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76EEF66B75A6FD6425E7634D /* Pods_FaradayEdgeMobileConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFF2ADFB95619405BA4B9A8 /* Pods_FaradayEdgeMobileConnect.framework */; };
+		DA0723762D6E442B00C61638 /* faraday-edge-mobile-connect-sdk-ios in Frameworks */ = {isa = PBXBuildFile; productRef = DA0723752D6E442B00C61638 /* faraday-edge-mobile-connect-sdk-ios */; };
+		DA65912F2D65F8F400AEDA71 /* DeeplinkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA65912E2D65F8F400AEDA71 /* DeeplinkManager.m */; };
+		E9EC3EF72AD3CEA1009EBEF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC3EF62AD3CEA1009EBEF1 /* AppDelegate.m */; };
+		E9EC3EFA2AD3CEA1009EBEF1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC3EF92AD3CEA1009EBEF1 /* SceneDelegate.m */; };
+		E9EC3F002AD3CEA1009EBEF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EC3EFE2AD3CEA1009EBEF1 /* Main.storyboard */; };
+		E9EC3F022AD3CEA2009EBEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9EC3F012AD3CEA2009EBEF1 /* Assets.xcassets */; };
+		E9EC3F052AD3CEA2009EBEF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EC3F032AD3CEA2009EBEF1 /* LaunchScreen.storyboard */; };
+		E9EC3F082AD3CEA2009EBEF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC3F072AD3CEA2009EBEF1 /* main.m */; };
+		E9EC3F192AD3D0F7009EBEF1 /* WifiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EC3F182AD3D0F7009EBEF1 /* WifiViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		115726B5BF97E0588B9D0E37 /* Pods-FaradayEdgeMobileConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaradayEdgeMobileConnect.release.xcconfig"; path = "Target Support Files/Pods-FaradayEdgeMobileConnect/Pods-FaradayEdgeMobileConnect.release.xcconfig"; sourceTree = "<group>"; };
+		DA65912D2D65F8A100AEDA71 /* DeeplinkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeeplinkManager.h; sourceTree = "<group>"; };
+		DA65912E2D65F8F400AEDA71 /* DeeplinkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeeplinkManager.m; sourceTree = "<group>"; };
+		DA9491EF2D5E0958005C215C /* FaradayMobileConnectDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FaradayMobileConnectDemo.entitlements; sourceTree = "<group>"; };
+		E9EC3EF22AD3CEA1009EBEF1 /* FaradayEdgeMobileConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaradayEdgeMobileConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9EC3EF52AD3CEA1009EBEF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9EC3EF62AD3CEA1009EBEF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9EC3EF82AD3CEA1009EBEF1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		E9EC3EF92AD3CEA1009EBEF1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		E9EC3EFF2AD3CEA1009EBEF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9EC3F012AD3CEA2009EBEF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9EC3F042AD3CEA2009EBEF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9EC3F062AD3CEA2009EBEF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9EC3F072AD3CEA2009EBEF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9EC3F0F2AD3D007009EBEF1 /* WifiConnect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WifiConnect-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9EC3F182AD3D0F7009EBEF1 /* WifiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiViewController.swift; sourceTree = "<group>"; };
+		F0063091C03763E386D75CD8 /* Pods-FaradayEdgeMobileConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaradayEdgeMobileConnect.debug.xcconfig"; path = "Target Support Files/Pods-FaradayEdgeMobileConnect/Pods-FaradayEdgeMobileConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		FCFF2ADFB95619405BA4B9A8 /* Pods_FaradayEdgeMobileConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaradayEdgeMobileConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9EC3EEF2AD3CEA1009EBEF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0723762D6E442B00C61638 /* faraday-edge-mobile-connect-sdk-ios in Frameworks */,
+				76EEF66B75A6FD6425E7634D /* Pods_FaradayEdgeMobileConnect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FBBC81240B81B325BF5B43B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0063091C03763E386D75CD8 /* Pods-FaradayEdgeMobileConnect.debug.xcconfig */,
+				115726B5BF97E0588B9D0E37 /* Pods-FaradayEdgeMobileConnect.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		81D75E9E33AD86BE0E2D66F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCFF2ADFB95619405BA4B9A8 /* Pods_FaradayEdgeMobileConnect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9EC3EE92AD3CEA1009EBEF1 = {
+			isa = PBXGroup;
+			children = (
+				E9EC3EF42AD3CEA1009EBEF1 /* FaradayMobileConnectDemo */,
+				E9EC3EF32AD3CEA1009EBEF1 /* Products */,
+				6FBBC81240B81B325BF5B43B /* Pods */,
+				81D75E9E33AD86BE0E2D66F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9EC3EF32AD3CEA1009EBEF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9EC3EF22AD3CEA1009EBEF1 /* FaradayEdgeMobileConnect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9EC3EF42AD3CEA1009EBEF1 /* FaradayMobileConnectDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DA9491EF2D5E0958005C215C /* FaradayMobileConnectDemo.entitlements */,
+				E9EC3F0E2AD3CFDB009EBEF1 /* wifiSession */,
+				E9EC3EF52AD3CEA1009EBEF1 /* AppDelegate.h */,
+				E9EC3EF62AD3CEA1009EBEF1 /* AppDelegate.m */,
+				E9EC3EF82AD3CEA1009EBEF1 /* SceneDelegate.h */,
+				DA65912D2D65F8A100AEDA71 /* DeeplinkManager.h */,
+				E9EC3EF92AD3CEA1009EBEF1 /* SceneDelegate.m */,
+				DA65912E2D65F8F400AEDA71 /* DeeplinkManager.m */,
+				E9EC3EFE2AD3CEA1009EBEF1 /* Main.storyboard */,
+				E9EC3F012AD3CEA2009EBEF1 /* Assets.xcassets */,
+				E9EC3F032AD3CEA2009EBEF1 /* LaunchScreen.storyboard */,
+				E9EC3F062AD3CEA2009EBEF1 /* Info.plist */,
+				E9EC3F072AD3CEA2009EBEF1 /* main.m */,
+			);
+			path = FaradayMobileConnectDemo;
+			sourceTree = "<group>";
+		};
+		E9EC3F0E2AD3CFDB009EBEF1 /* wifiSession */ = {
+			isa = PBXGroup;
+			children = (
+				E9EC3F0F2AD3D007009EBEF1 /* WifiConnect-Bridging-Header.h */,
+				E9EC3F182AD3D0F7009EBEF1 /* WifiViewController.swift */,
+			);
+			path = wifiSession;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9EC3EF12AD3CEA1009EBEF1 /* FaradayEdgeMobileConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9EC3F0B2AD3CEA2009EBEF1 /* Build configuration list for PBXNativeTarget "FaradayEdgeMobileConnect" */;
+			buildPhases = (
+				AFD44EFA1BA0E80CF07B0AE7 /* [CP] Check Pods Manifest.lock */,
+				E9EC3EEE2AD3CEA1009EBEF1 /* Sources */,
+				E9EC3EEF2AD3CEA1009EBEF1 /* Frameworks */,
+				E9EC3EF02AD3CEA1009EBEF1 /* Resources */,
+				3688711C36F191DDAAC6B0CA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaradayEdgeMobileConnect;
+			productName = WifiConnect;
+			productReference = E9EC3EF22AD3CEA1009EBEF1 /* FaradayEdgeMobileConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9EC3EEA2AD3CEA1009EBEF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E9EC3EF12AD3CEA1009EBEF1 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = E9EC3EED2AD3CEA1009EBEF1 /* Build configuration list for PBXProject "FaradayEdgeMobileConnect" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9EC3EE92AD3CEA1009EBEF1;
+			packageReferences = (
+				DA0723742D6E442B00C61638 /* XCRemoteSwiftPackageReference "faraday-edge-mobile-connect-sdk-ios" */,
+			);
+			productRefGroup = E9EC3EF32AD3CEA1009EBEF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9EC3EF12AD3CEA1009EBEF1 /* FaradayEdgeMobileConnect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9EC3EF02AD3CEA1009EBEF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9EC3F052AD3CEA2009EBEF1 /* LaunchScreen.storyboard in Resources */,
+				E9EC3F022AD3CEA2009EBEF1 /* Assets.xcassets in Resources */,
+				E9EC3F002AD3CEA1009EBEF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3688711C36F191DDAAC6B0CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaradayEdgeMobileConnect/Pods-FaradayEdgeMobileConnect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaradayEdgeMobileConnect/Pods-FaradayEdgeMobileConnect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaradayEdgeMobileConnect/Pods-FaradayEdgeMobileConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD44EFA1BA0E80CF07B0AE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaradayEdgeMobileConnect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9EC3EEE2AD3CEA1009EBEF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9EC3F192AD3D0F7009EBEF1 /* WifiViewController.swift in Sources */,
+				E9EC3EF72AD3CEA1009EBEF1 /* AppDelegate.m in Sources */,
+				E9EC3F082AD3CEA2009EBEF1 /* main.m in Sources */,
+				E9EC3EFA2AD3CEA1009EBEF1 /* SceneDelegate.m in Sources */,
+				DA65912F2D65F8F400AEDA71 /* DeeplinkManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9EC3EFE2AD3CEA1009EBEF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9EC3EFF2AD3CEA1009EBEF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9EC3F032AD3CEA2009EBEF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9EC3F042AD3CEA2009EBEF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9EC3F092AD3CEA2009EBEF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9EC3F0A2AD3CEA2009EBEF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9EC3F0C2AD3CEA2009EBEF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0063091C03763E386D75CD8 /* Pods-FaradayEdgeMobileConnect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FaradayMobileConnectDemo/FaradayMobileConnectDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = QVWCW6HM6Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FaradayMobileConnectDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Faraday Edge Mobile Connect";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Application requires user’s location for better user experience.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Application requires user’s location for better user experience.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Application requires user’s location for better user experience.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = net.faraday.mobileconnect.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FaradayMobileConnectDemo/wifiSession/WifiConnect-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9EC3F0D2AD3CEA2009EBEF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 115726B5BF97E0588B9D0E37 /* Pods-FaradayEdgeMobileConnect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FaradayMobileConnectDemo/FaradayMobileConnectDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = QVWCW6HM6Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FaradayMobileConnectDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Faraday Edge Mobile Connect";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Application requires user’s location for better user experience.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Application requires user’s location for better user experience.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Application requires user’s location for better user experience.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = net.faraday.mobileconnect.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FaradayMobileConnectDemo/wifiSession/WifiConnect-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9EC3EED2AD3CEA1009EBEF1 /* Build configuration list for PBXProject "FaradayEdgeMobileConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9EC3F092AD3CEA2009EBEF1 /* Debug */,
+				E9EC3F0A2AD3CEA2009EBEF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9EC3F0B2AD3CEA2009EBEF1 /* Build configuration list for PBXNativeTarget "FaradayEdgeMobileConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9EC3F0C2AD3CEA2009EBEF1 /* Debug */,
+				E9EC3F0D2AD3CEA2009EBEF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA0723742D6E442B00C61638 /* XCRemoteSwiftPackageReference "faraday-edge-mobile-connect-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/faradaynet/faraday-edge-mobile-connect-sdk-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA0723752D6E442B00C61638 /* faraday-edge-mobile-connect-sdk-ios */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA0723742D6E442B00C61638 /* XCRemoteSwiftPackageReference "faraday-edge-mobile-connect-sdk-ios" */;
+			productName = "faraday-edge-mobile-connect-sdk-ios";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E9EC3EEA2AD3CEA1009EBEF1 /* Project object */;
+}
