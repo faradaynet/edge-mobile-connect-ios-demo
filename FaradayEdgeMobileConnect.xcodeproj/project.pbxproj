@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76EEF66B75A6FD6425E7634D /* Pods_FaradayEdgeMobileConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFF2ADFB95619405BA4B9A8 /* Pods_FaradayEdgeMobileConnect.framework */; };
-		DA0723762D6E442B00C61638 /* faraday-edge-mobile-connect-sdk-ios in Frameworks */ = {isa = PBXBuildFile; productRef = DA0723752D6E442B00C61638 /* faraday-edge-mobile-connect-sdk-ios */; };
+		754750F32EA25EDA00EF7F81 /* faraday-edge-mobile-connect-sdk-ios in Frameworks */ = {isa = PBXBuildFile; productRef = 754750F22EA25EDA00EF7F81 /* faraday-edge-mobile-connect-sdk-ios */; };
 		DA65912F2D65F8F400AEDA71 /* DeeplinkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA65912E2D65F8F400AEDA71 /* DeeplinkManager.m */; };
 		E9EC3EF72AD3CEA1009EBEF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC3EF62AD3CEA1009EBEF1 /* AppDelegate.m */; };
 		E9EC3EFA2AD3CEA1009EBEF1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC3EF92AD3CEA1009EBEF1 /* SceneDelegate.m */; };
@@ -45,8 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA0723762D6E442B00C61638 /* faraday-edge-mobile-connect-sdk-ios in Frameworks */,
-				76EEF66B75A6FD6425E7634D /* Pods_FaradayEdgeMobileConnect.framework in Frameworks */,
+				754750F32EA25EDA00EF7F81 /* faraday-edge-mobile-connect-sdk-ios in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +162,7 @@
 			);
 			mainGroup = E9EC3EE92AD3CEA1009EBEF1;
 			packageReferences = (
-				DA0723742D6E442B00C61638 /* XCRemoteSwiftPackageReference "faraday-edge-mobile-connect-sdk-ios" */,
+				754750F12EA25EDA00EF7F81 /* XCRemoteSwiftPackageReference "faraday-edge-mobile-connect-sdk-ios" */,
 			);
 			productRefGroup = E9EC3EF32AD3CEA1009EBEF1 /* Products */;
 			projectDirPath = "";
@@ -474,20 +472,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DA0723742D6E442B00C61638 /* XCRemoteSwiftPackageReference "faraday-edge-mobile-connect-sdk-ios" */ = {
+		754750F12EA25EDA00EF7F81 /* XCRemoteSwiftPackageReference "faraday-edge-mobile-connect-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/faradaynet/faraday-edge-mobile-connect-sdk-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 1.0.0;
+				version = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DA0723752D6E442B00C61638 /* faraday-edge-mobile-connect-sdk-ios */ = {
+		754750F22EA25EDA00EF7F81 /* faraday-edge-mobile-connect-sdk-ios */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA0723742D6E442B00C61638 /* XCRemoteSwiftPackageReference "faraday-edge-mobile-connect-sdk-ios" */;
+			package = 754750F12EA25EDA00EF7F81 /* XCRemoteSwiftPackageReference "faraday-edge-mobile-connect-sdk-ios" */;
 			productName = "faraday-edge-mobile-connect-sdk-ios";
 		};
 /* End XCSwiftPackageProductDependency section */

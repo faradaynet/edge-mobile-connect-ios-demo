@@ -16,6 +16,8 @@ class WifiViewController: UIViewController {
     @IBOutlet weak var appNameText: UILabel!
     @IBOutlet weak var successResultText: UITextView!
     @IBOutlet weak var connectButton: UIButton!
+    @IBOutlet weak var authenticateButton: UIButton!
+
     
     var deeplinkUrl: String?
 
@@ -175,6 +177,100 @@ class WifiViewController: UIViewController {
         }
     }
     
+    private func startToAuthenticate(countryCode: String, msisdn: String, nationalId: String, passport: String){
+        
+        let connectionUrl: String = "https://service-provider-url.com"
+
+        let mobileConnect = FNEdgeMobileConnect()
+
+        let marketingPermission: Bool = true
+        let shareDataPermission: Bool = true
+        let storeDataPermission: Bool =  false
+
+        mobileConnect.authenticateWifi(connectionUrl:connectionUrl, countryCode: countryCode ,msisdn: msisdn, passport: passport, nationalId: nationalId, marketingPermission: marketingPermission,
+                                 shareDataPermission: shareDataPermission, storeDataPermission: storeDataPermission, completion: { result in
+            print("FaradayEdgeSDKDemo errorCode: ", result.getErrorCode())
+            print("FaradayEdgeSDKDemo success: ", result.getSuccess())
+            print("FaradayEdgeSDKDemo message: ", result.getMessage())
+            print("FaradayEdgeSDKDemo mac: ", result.getMac())
+            
+            DispatchQueue.main.async {
+                self.hideProgressIndicator()
+                let outputText = """
+                SDK errorCode: \(result.getErrorCode())
+                SDK success: \(result.getSuccess())
+                SDK message: \(result.getMessage())
+                SDK mac: \(result.getMac())
+                """
+                self.successResultText.text = outputText
+                self.successResultText.textColor = .black
+            }
+        })
+    }
+    
+    @IBAction func actionAuthenticate(_ sender: Any) {
+        var ssidNameValue: String = ""
+        var countryCodeValue: String = ""
+        var phoneNumberValue: String = ""
+        var nationalIdValue: String = ""
+        var passportNumberValue: String = ""
+
+        if let ssidNameText = ssidName.text, !ssidNameText.isEmpty {
+            ssidNameValue = ssidNameText
+        }
+
+        if let countryCodeText = countryCode.text, !countryCodeText.isEmpty {
+            countryCodeValue = countryCodeText
+        }
+
+        if let phoneNumberText = phoneNumber.text, !phoneNumberText.isEmpty {
+            phoneNumberValue = phoneNumberText
+        }
+
+        if let nationalIdText = nationalId.text, !nationalIdText.isEmpty {
+            nationalIdValue = nationalIdText
+        }
+
+        if let passportNumberText = passportNumber.text, !passportNumberText.isEmpty {
+            passportNumberValue = passportNumberText
+        }
+      
+        let monitor = NWPathMonitor()
+        let queue = DispatchQueue.global(qos: .background)
+        monitor.start(queue: queue)
+
+        monitor.pathUpdateHandler = { path in
+            let isWiFiConnected = path.usesInterfaceType(.wifi)
+            if isWiFiConnected {
+                if (!ssidNameValue.isEmpty) {
+                    if (self.checkCurrentSSID(ssid: ssidNameValue)) {
+                        self.showProgressIndicator()
+                        self.startToAuthenticate(countryCode: countryCodeValue, msisdn: phoneNumberValue,
+                                            nationalId: nationalIdValue, passport: passportNumberValue)
+                    } else {
+                        self.joinOpenWifi(ssid: ssidNameValue)
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        self.showProgressIndicator()
+                        self.startToAuthenticate(countryCode: countryCodeValue, msisdn: phoneNumberValue,
+                                            nationalId: nationalIdValue, passport: passportNumberValue)
+                    }
+                }
+            } else {
+                if (!ssidNameValue.isEmpty) {
+                    self.joinOpenWifi(ssid: ssidNameValue)
+                } else {
+                    DispatchQueue.main.async {
+                        self.successResultText.text = "The device has no access to WiFi."
+                        self.successResultText.textColor = .red
+                    }
+                }
+            }
+            monitor.cancel()
+        }
+    }
+    
     @IBAction func closeAppAction(_ sender: Any) {
         exit(0)
     }
@@ -183,6 +279,7 @@ class WifiViewController: UIViewController {
         successResultText.isHidden = false
         
         connectButton.layer.cornerRadius = 12
+        authenticateButton.layer.cornerRadius = 12
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         view.addGestureRecognizer(tapGesture)
